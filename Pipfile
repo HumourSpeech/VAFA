@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+datasets = "*"
+torch = "*"
+scikit-learn = "*"
+pandas = "*"
+numpy = "*"
+num2words = "*"
+contractions = "*"
+nltk = "*"
+word2number = "*"
+accelerate = ">=0.26.0"
+transformers = {extras = ["torch"], version = "*"}
+tensorflow = "*"
+keras = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
