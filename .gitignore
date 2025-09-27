@@ -1,3 +1,8 @@
+.vscode
 results
-Models
 datasets
+NER_Model
+NER.ipynb
+Pipfile
+Pipfile.lock
+__pycache__
