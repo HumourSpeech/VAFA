@@ -1,5 +1,5 @@
 import sys
-from assisstants.logging import logger
+from assisstants.logging.logger import logging
 class AssisstantException(Exception):
     def __init__(self, error_message, error_details:sys):
         self.error_message = error_message
@@ -14,6 +14,6 @@ class AssisstantException(Exception):
     
 if __name__=='__main__':
     try:
-        logger.logging.info("Logging has started in try block")
+        logging.info("Logging has started in try block")
     except Exception as e:
         raise AssisstantException(e, sys)
