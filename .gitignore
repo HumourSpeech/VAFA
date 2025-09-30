@@ -6,3 +6,4 @@ NER.ipynb
 Pipfile
 Pipfile.lock
 __pycache__
+logs/
