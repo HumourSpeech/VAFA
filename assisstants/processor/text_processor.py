@@ -8,9 +8,9 @@ import re
 
 class TextProcessor:
     try:
-        logging.info("Text Processing Started")
-        
         def process_text(self, text):
+            logging.info("Text Processing Started")
+            
             """
             Preprocess input text:
             1. Expand contractions (e.g., "I'm" → "I am")
@@ -36,7 +36,7 @@ class TextProcessor:
             # Remove extra spaces
             text = re.sub(r"\s+", " ", text).strip()
 
-            logging.info("Text Processing Completed")
+            logging.info(f"Text Processing Completed: {text}")
             return text
     except Exception as e:
         raise AssisstantException(e, sys)
